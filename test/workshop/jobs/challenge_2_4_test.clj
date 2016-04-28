@@ -50,3 +50,5 @@
               "Peer executing task :read-segments"
               "Peer executing task :write-segments"]
              (sort (butlast (rest results))))))))
+
+;; (clojure.test/run-tests 'workshop.jobs.challenge-2-4-test)

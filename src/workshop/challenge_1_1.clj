@@ -5,7 +5,11 @@
 
 ;;; <<< BEGIN FILL ME IN >>>
 
-(def workflow)
+(def workflow
+  [[:read-segments :cube-n]
+   [:cube-n :add-ten]
+   [:add-ten :mutiply-by-5]
+   [:mutiply-by-5 :wrte-segment]])
 
 ;;; <<< END FILL ME IN >>>
 

@@ -79,3 +79,5 @@
             groups (group-by #(last (re-find #":user-id (\d+).*" %)) lines)]
         (doseq [k (keys groups)]
           (is (apply = (map #(last (re-find #"Peer (\w+-\w+-\w+-\w+-\w+).*" %)) (get groups k)))))))))
+
+;; (clojure.test/run-tests 'workshop.jobs.challenge-2-3-test)

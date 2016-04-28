@@ -65,3 +65,5 @@
           (u/segments-equal? j-expected-output j-actual)
           (u/segments-equal? k-expected-output k-actual)
           (u/segments-equal? l-expected-output l-actual))))))
+
+;; (clojure.test/run-tests 'workshop.jobs.challenge-1-3-test)

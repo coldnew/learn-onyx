@@ -45,3 +45,5 @@
         (feedback-exception! peer-config job-id)
         (let [[results] (u/collect-outputs! lifecycles [:write-segments])]
           (u/segments-equal? expected-output results))))))
+
+;; (clojure.test/run-tests 'workshop.jobs.challenge-2-0-test)

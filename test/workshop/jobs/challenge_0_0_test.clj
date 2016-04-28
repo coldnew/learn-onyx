@@ -42,3 +42,5 @@
           (clojure.pprint/pprint results)
           (println "==== End job output ====")
           (u/segments-equal? input results))))))
+
+;; (clojure.test/run-tests 'workshop.jobs.challenge-0-0-test)

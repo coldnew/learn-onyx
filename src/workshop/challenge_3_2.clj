@@ -40,8 +40,8 @@
 ;;; Functions ;;;
 
 ;; <<< BEGIN FILL ME IN >>>
-
-
+(defn split-sentence [segment]
+  (update-in segment [:sentence] #(clojure.string/split % #"\s")))
 
 ;; <<< END FILL ME IN >>>
 

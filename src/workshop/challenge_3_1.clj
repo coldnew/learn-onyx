@@ -57,6 +57,15 @@
 
 ;; <<< BEGIN FILL ME IN >>>
 
+(defn upper-case [segment]
+  (update-in segment [:name] #(clojure.string/upper-case %)))
+
+(defn interpose-pipe [segment]
+  (update-in segment [:name] #(apply str (interpose "|" (seq %)))))
+
+(defn interpose-space [segment]
+  (update-in segment [:name] #(apply str (interpose " " (seq %)))))
+
 ;; <<< END FILL ME IN >>>
 
 ;;; Lifecycles ;;;

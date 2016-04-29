@@ -52,3 +52,5 @@
       (is (clojure.set/subset? 
            (into #{} (map (fn [n] (str {:n n})) (range 10)))
            (into #{}  results))))))
+
+;; (clojure.test/run-tests 'workshop.jobs.challenge-4-1-test)
